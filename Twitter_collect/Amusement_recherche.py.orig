@@ -47,5 +47,11 @@ def collect_by_streaming():
 collect_by_streaming()
 
 
-# test
+
+def collect_by_streaming():
+
+    connexion = connect.twitter_setup()
+    listener = StdOutListener()
+    stream=tweepy.Stream(auth = connexion.auth, listener=listener)
+    stream.filter(track=['Emmanuel Macron'])
 
