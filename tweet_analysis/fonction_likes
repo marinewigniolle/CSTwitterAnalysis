@@ -1,0 +1,18 @@
+import numpy as np
+
+def max_de_likes(data):
+    likes_max = np.max(data['Likes'])
+    likes = data[data.RTs == likes_max].index[0]
+
+    print("The tweet with more likes is : \n{}".format(data['tweet_textual_content'][likes]))
+    print("Number of likes : {}".format(likes_max))
+    print("{} characters.\n".format(data['len'][likes]))
+
+
+def min_de_likes(data):
+    likes_min = np.min(data['Likes'])
+    likes = data[data.RTs == likes_min].index[0]
+
+    print("The tweet with more likes is : \n{}".format(data['tweet_textual_content'][likes]))
+    print("Number of likes : {}".format(likes_min))
+    print("{} characters.\n".format(data['len'][likes]))
