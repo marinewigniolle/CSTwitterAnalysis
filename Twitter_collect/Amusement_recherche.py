@@ -16,6 +16,10 @@ def collect_by_user(user_id):
 ## ce code renvoie les 200 derniers statuts de l'utilisateur choisi
 
 
+
+collect_by_user(1144707571)
+
+
 from tweepy.streaming import StreamListener
 class StdOutListener(StreamListener):
 
@@ -32,6 +36,7 @@ class StdOutListener(StreamListener):
             return True
 
 
+
 def collect_by_streaming():
 
     connexion = twitter_setup()
@@ -40,3 +45,7 @@ def collect_by_streaming():
     stream.filter(track=['Marine'])
 
 collect_by_streaming()
+
+
+
+
