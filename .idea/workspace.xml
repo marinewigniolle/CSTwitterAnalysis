@@ -322,6 +322,9 @@
       <module name="twitterPredictor" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
       <option name="SDK_HOME" value="" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Spring3" />
       <option name="IS_MODULE_SDK" value="true" />
@@ -440,11 +443,11 @@
     </configuration>
     <list>
       <item itemvalue="Python tests.test_monmodule" />
+      <item itemvalue="Python tests.pytest in test_tweet_extraire.py" />
       <item itemvalue="Python.test_monmodule" />
       <item itemvalue="Python tests.pytest in test_twitter_connection_setup.py" />
       <item itemvalue="Python.recherche_tweet" />
       <item itemvalue="Python.Tutorial" />
-      <item itemvalue="Python tests.pytest in test_tweet_extraire.py" />
       <item itemvalue="Python tests.pytest for test_tweet_extraire.test_tweet_extraire" />
     </list>
     <recent_temporary>
