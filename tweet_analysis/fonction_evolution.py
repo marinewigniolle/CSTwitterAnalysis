@@ -33,3 +33,6 @@ def nombre_tweets_candidates(data,candidate1,candidate2):
     tcandidate2.plot(figsize=(16,4), label="Candidate2", legend=True)
 
     plt.show()
+
+
+#On peut appliquer la fonction pour le nombre de retweets, ainsi que d'autres mot-clés.
