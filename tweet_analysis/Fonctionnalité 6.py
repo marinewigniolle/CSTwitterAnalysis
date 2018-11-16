@@ -1,3 +1,4 @@
+import pandas as pd
 tfav = pd.Series(data=data['Likes'].values, index=data['Date'])
 tret = pd.Series(data=data['RTs'].values, index=data['Date'])
 
